@@ -128,3 +128,64 @@ a {
   background-clip: text;
   text-fill-color: transparent;
 }
+
+/* LegalCaseLens — Courtroom Theme */
+
+:root {
+  --court-brown: #6F4E37;
+  --court-ivory: #F5EFE6;
+  --court-dark: #2B2118;
+  --court-gold: #B08D57;
+}
+
+/* Main page */
+body {
+  background: var(--court-ivory) !important;
+  color: var(--court-dark) !important;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+}
+
+/* Primary brown elements */
+.bg-primary-600,
+.bg-primary-500,
+.bg-primary-700 {
+  background-color: var(--court-brown) !important;
+}
+
+/* Brown text */
+.text-primary-600,
+.text-primary-500,
+.text-primary-700 {
+  color: var(--court-brown) !important;
+}
+
+/* Links */
+a {
+  color: var(--court-brown);
+}
+
+/* Chat input areas */
+textarea,
+input {
+  border-color: rgba(111, 78, 55, 0.25) !important;
+}
+
+textarea:focus,
+input:focus {
+  border-color: var(--court-brown) !important;
+  box-shadow: 0 0 0 2px rgba(111, 78, 55, 0.12) !important;
+}
+
+/* Upload / file cards */
+[class*="border"] {
+  border-color: rgba(111, 78, 55, 0.15);
+}
+
+/* Subtle courtroom gold accent */
+[class*="primary"] {
+  --tw-ring-color: var(--court-gold);
+}
